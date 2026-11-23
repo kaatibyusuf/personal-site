@@ -8,8 +8,22 @@
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', next === 'dark' ? '#101714' : '#F2F4EE');
+    if (meta) meta.setAttribute('content', next === 'dark' ? '#0A0A0A' : '#FAF9F6');
   });
+
+  // Mobile menu
+  var nav = document.getElementById('nav');
+  var burger = document.getElementById('burger');
+  function setMenu(open) {
+    nav.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  burger.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+  document.getElementById('menu').addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') setMenu(false);
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
 
   // Local time in Lagos
   var clock = document.getElementById('clock');
