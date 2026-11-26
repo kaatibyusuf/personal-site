@@ -42,14 +42,14 @@
   (function () {
     var user = 'kaatibyusuf', grid = document.getElementById('ghGrid'), total = document.getElementById('ghTotal');
     if (!grid) return;
-    var KEY = 'gh-contrib-v1', MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var KEY = 'gh-contrib-v2', MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     function fail() {
       var f = grid.closest('.gh').querySelector('.gh-scroll');
       f.innerHTML = '<p class="gh-msg">The graph could not load right now. You can see my activity on GitHub.</p>';
     }
     function draw(d) {
       var days = (d.contributions || []).slice(-371);
-      if (!days.length) return fail();
+      if (!days.length || !days.some(function (x) { return x.count > 0; })) throw new Error('empty');
       var first = new Date(days[0].date + 'T00:00:00Z').getUTCDay(), html = '', cols = 0, lastM = -1, lastAt = -9, i;
       var cells = [], k;
       for (k = 0; k < first; k++) cells.push(null);
@@ -75,11 +75,11 @@
     }
     var cached = null;
     try { cached = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
-    if (cached && cached.t && Date.now() - cached.t < 864e5) return draw(cached.d);
+    if (cached && cached.t && Date.now() - cached.t < 864e5) { try { return draw(cached.d); } catch (e) {} }
     fetch('https://github-contributions-api.jogruber.de/v4/' + user + '?y=last')
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (d) { try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {} draw(d); })
-      .catch(function () { cached ? draw(cached.d) : fail(); });
+      .then(function (d) { draw(d); try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {} })
+      .catch(function () { try { if (cached) return draw(cached.d); } catch (e) {} fail(); });
   })();
 
   // Terminal intro, shown once per session
