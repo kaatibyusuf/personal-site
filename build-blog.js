@@ -83,6 +83,12 @@ const head = (title, desc, rel, extra = '') => `<!DOCTYPE html>
     </div>
   </header>
 `;
+const SUBSTACK = 'https://kaatibyuusuf.substack.com/';
+const subBox = `<aside class="sub" aria-label="Subscribe by email">
+          <p class="sub-t">get new posts in your inbox</p>
+          <p class="sub-d">one email when i publish something new. no spam, and you can unsubscribe anytime.</p>
+          <a class="pill" href="${SUBSTACK}" target="_blank" rel="noopener">Subscribe by email</a>
+        </aside>`;
 const foot = rel => `
   <footer class="foot"><div class="wrap">© ${new Date().getFullYear()} Abdulsamad Yusuf</div></footer>
   <script src="${rel}script.js"></script>
@@ -102,6 +108,7 @@ fs.writeFileSync(path.join(OUT, 'index.html'), head('Blog · Abdulsamad Yusuf', 
       <div class="wrap">
         <h1 class="page-h">~/blog</h1>
         <p class="prose">Notes on building software, learning and faith.</p>
+        ${subBox}
         ${list}
       </div>
     </section>
@@ -119,6 +126,7 @@ posts.forEach((p, i) => {
         <div class="post-body">
 ${p.html}
         </div>
+        ${subBox}
         <nav class="post-nav" aria-label="More posts">
           ${prev ? `<a href="${prev.slug}.html"><span class="muted">Older</span>${esc(prev.title)}</a>` : '<span></span>'}
           ${next ? `<a class="r" href="${next.slug}.html"><span class="muted">Newer</span>${esc(next.title)}</a>` : '<span></span>'}

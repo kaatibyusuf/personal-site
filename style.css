@@ -130,6 +130,11 @@ a.row:hover .row-title { text-decoration-color: var(--accent); }
 .stack li { padding: 5px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 13.5px; }
 
 /* blog */
+.sub { margin: 48px 0 0; padding: 26px 28px; border: 1px solid var(--line); border-left: 2px solid var(--accent); }
+.sub-t { margin: 0 0 6px; font-size: 17px; font-weight: 500; }
+.sub-d { margin: 0 0 20px; color: var(--muted); max-width: 52ch; }
+.sub .pill { padding: 12px 26px; }
+.blog-top .sub { margin: 0 0 40px; }
 .blog-top { border-top: 0; padding-top: 72px; }
 .page-h { margin: 0 0 16px; font-weight: 300; font-size: clamp(32px, 5.4vw, 48px); line-height: 1.15; letter-spacing: -.02em; color: var(--accent); }
 .post { max-width: 700px; }

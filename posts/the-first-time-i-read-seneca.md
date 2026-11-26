@@ -1,6 +1,6 @@
 ---
 title: the first time i read seneca
-date: 2026-11-26
+date: 2026-11-24
 summary: a small book asked me a question i couldn't answer, and left me with hope instead of guilt.
 ---
 the first time i read *on the shortness of life* by seneca, i finished it in one sitting and then just sat there. it's a small book. you can read it in an afternoon. but it asked me a question i didn't have an answer for.

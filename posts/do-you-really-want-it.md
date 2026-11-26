@@ -1,6 +1,6 @@
 ---
 title: do you really want it?
-date: 2026-11-28
+date: 2026-11-26
 summary: a letter on the difference between wishing for success and wanting it, with lessons from my rabbits, chickens and a cat.
 ---
 i love animals. if dogs were allowed in islam, i would have gotten one. regardless, i have rabbits, chickens and a cat named humayyah.

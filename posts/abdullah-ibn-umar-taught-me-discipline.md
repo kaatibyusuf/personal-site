@@ -1,6 +1,6 @@
 ---
 title: abdullah ibn umar taught me discipline
-date: 2026-11-27
+date: 2026-11-25
 summary: lessons from the life of abdullah ibn umar on how to build a steady, disciplined life.
 ---
 about ten years ago, i was fortunate to read the story of abdullah ibn umar, radiyallahu anhuma, the son of umar ibn al-khattab. it stayed with me, and i keep coming back to it.
