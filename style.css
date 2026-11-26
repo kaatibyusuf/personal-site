@@ -1,4 +1,5 @@
 :root {
+  --g0: #E9E7E1; --g1: #BFDDCF; --g2: #7FBFA2; --g3: #3F9A75; --g4: #0E6B4D;
   --bg: #FAF9F6;
   --ink: #1A1A1A;
   --muted: #6B6B68;
@@ -18,6 +19,7 @@
   --rule: #B5584A;
   --accent: #6DBF9D;
   --hover: #141414;
+  --g0: #1C1C1B; --g1: #1F3D31; --g2: #2E6B52; --g3: #47A07C; --g4: #7FD6AD;
   color-scheme: dark;
 }
 
@@ -128,6 +130,21 @@ a.row:hover .row-title { text-decoration-color: var(--accent); }
 
 .stack { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .stack li { padding: 5px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 13.5px; }
+
+/* github graph */
+.gh-scroll { overflow-x: auto; padding-bottom: 8px; }
+.gh-grid { --cell: 13px; --gap: 4px; display: grid; grid-template-rows: 20px repeat(7, var(--cell)); grid-auto-flow: column; grid-auto-columns: var(--cell); gap: var(--gap); width: max-content; min-height: 160px; }
+.gh-grid .c { width: var(--cell); height: var(--cell); background: var(--g0); border-radius: 2px; }
+.gh-grid .c.l1 { background: var(--g1); } .gh-grid .c.l2 { background: var(--g2); }
+.gh-grid .c.l3 { background: var(--g3); } .gh-grid .c.l4 { background: var(--g4); }
+.gh-grid .c.pad { background: transparent; }
+.gh-grid .m { font-size: 12px; line-height: 20px; color: var(--muted); white-space: nowrap; overflow: visible; }
+.gh-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; font-size: 13.5px; color: var(--muted); }
+.gh-total { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.gh-key { display: inline-flex; align-items: center; gap: 4px; }
+.gh-key i { width: 11px; height: 11px; border-radius: 2px; background: var(--g0); display: inline-block; }
+.gh-key .l1 { background: var(--g1); } .gh-key .l2 { background: var(--g2); } .gh-key .l3 { background: var(--g3); } .gh-key .l4 { background: var(--g4); }
+.gh-msg { color: var(--muted); margin: 0; }
 
 /* contact links */
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; }
