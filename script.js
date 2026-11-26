@@ -42,7 +42,7 @@
   (function () {
     var user = 'kaatibyusuf', grid = document.getElementById('ghGrid'), total = document.getElementById('ghTotal');
     if (!grid) return;
-    var KEY = 'gh-contrib-v2', MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var KEY = 'gh-contrib-v3', MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     function fail() {
       var f = grid.closest('.gh').querySelector('.gh-scroll');
       f.innerHTML = '<p class="gh-msg">The graph could not load right now. You can see my activity on GitHub.</p>';
@@ -76,8 +76,9 @@
     var cached = null;
     try { cached = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
     if (cached && cached.t && Date.now() - cached.t < 864e5) { try { return draw(cached.d); } catch (e) {} }
-    fetch('https://github-contributions-api.jogruber.de/v4/' + user + '?y=last')
+    fetch('contributions.json', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .catch(function () { return fetch('https://github-contributions-api.jogruber.de/v4/' + user + '?y=last').then(function (r) { if (!r.ok) throw 0; return r.json(); }); })
       .then(function (d) { draw(d); try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {} })
       .catch(function () { try { if (cached) return draw(cached.d); } catch (e) {} fail(); });
   })();

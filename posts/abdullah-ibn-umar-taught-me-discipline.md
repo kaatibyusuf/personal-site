@@ -3,11 +3,11 @@ title: abdullah ibn umar taught me discipline
 date: 2026-11-27
 summary: lessons from the life of abdullah ibn umar on how to build a steady, disciplined life.
 ---
-about eight years ago, i was fortunate to read the story of abdullah ibn umar, radiyallahu anhuma, the son of umar ibn khattab. it stayed with me, and i keep coming back to it.
+about ten years ago, i was fortunate to read the story of abdullah ibn umar, radiyallahu anhuma, the son of umar ibn al-khattab. it stayed with me, and i keep coming back to it.
 
-before reading that story, i had a schedule i followed, thanks to my dad. it was sustainable but i knew i needed something bigger to fit my growing self.
+i used to think discipline was about being hard on yourself. wake up at 4, no excuses, no mercy, cold showers, a schedule you could hang on a wall. i tried that version many times. it lasted a few weeks and then i'd crash and feel worse than before.
 
-then i raed the story of abdullah ibn umar, and i realised his discipline was a gem. nobody wrote about his schedule. what they wrote about was how he *lived*, and slowly, across a very long life, it added up to something heavy and beautiful.
+then i went back to the story of abdullah ibn umar, and i realised his discipline was not loud. nobody wrote about his schedule. what they wrote about was how he *lived*, and slowly, across a very long life, it added up to something heavy and beautiful.
 
 so this is what i'm learning from him. take it slowly, like i'm trying to.
 
@@ -21,7 +21,7 @@ i think about how many times i've been told "not yet" and let it turn into "neve
 
 ## one sentence, and he changed his nights
 
-this is the story i come back to most. abdullah used to sleep in the mosque in the prophet's time, and in those days when someone had a dream he would tell it to the prophet ﷺ. abdullah dreamed that two angels carried him toward the fire, and then another angel met them and told him not to be afraid. his sister hafsah told the prophet ﷺ about it.
+this is the story i come back to most. abdullah used to sleep in the mosque in the prophet's time, and in those days when someone had a dream he would tell it to the prophet ﷺ. abdullah dreamed that two angels carried him toward the fire, and then another angel met them and told him not to be afraid. his sister hafsa told the prophet ﷺ about it.
 
 the prophet's reply is what gets me. he said: what an excellent man abdullah is, if only he would pray at night.
 
@@ -29,7 +29,7 @@ look at the order. first praise, then the one thing missing. he didn't say "you'
 
 and then salim, his son, says: after that, abdullah slept very little at night.
 
-hmmmmm.... he didn't say "i'll start next month" or "my situation is different". he took the one gap that was pointed out to him and closed it, for the rest of his life. and the thing he closed it with was not a long list of rules. it was one habit: standing in the dark, alone, with his lord.
+he didn't argue. he didn't say "i'll start next month" or "my situation is different". he took the one gap that was pointed out to him and closed it, for the rest of his life. and the thing he closed it with was not a long list of rules. it was one habit: standing in the dark, alone, with his lord.
 
 when i look at my own life, there's almost always one gap that i already know about. one thing i've been told, or told myself, many times. discipline isn't fixing ten things. it's finally fixing that one.
 
