@@ -9,7 +9,7 @@ i used to think discipline was about being hard on yourself. wake up at 4, no ex
 
 then i went back to the story of abdullah ibn umar, and i realised his discipline was not loud. nobody wrote about his schedule. what they wrote about was how he *lived*, and slowly, across a very long life, it added up to something heavy and beautiful.
 
-so this is what i learned and i'm learning from him. take it slowly, like i'm trying to.
+so this is what i'm learning from him. take it slowly, like i'm trying to.
 
 ## he was turned back, and he stayed ready
 
