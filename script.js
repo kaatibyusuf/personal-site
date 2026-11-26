@@ -28,6 +28,7 @@
   // Local time in Lagos
   var clock = document.getElementById('clock');
   function tick() {
+    if (!clock) return;
     try {
       clock.textContent = new Intl.DateTimeFormat('en-US', {
         timeZone: 'Africa/Lagos', hour: 'numeric', minute: '2-digit'
