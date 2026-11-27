@@ -73,6 +73,7 @@ const head = (title, desc, rel, extra = '') => `<!DOCTYPE html>
         <a href="${rel}index.html#writing">/writing</a>
         <a href="${rel}blog/index.html">/blog</a>
         <a href="${rel}index.html#papers">/papers</a>
+        <a href="${rel}index.html#reading">/reading</a>
         <a href="${rel}index.html#about">/about</a>
         <a href="${rel}index.html#contact">/contact</a>
       </nav>
