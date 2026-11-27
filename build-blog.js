@@ -108,7 +108,7 @@ fs.writeFileSync(path.join(OUT, 'index.html'), head('Blog · Abdulsamad Yusuf', 
     <section class="block blog-top">
       <div class="wrap">
         <h1 class="page-h">~/blog</h1>
-        <p class="prose">Notes on building software, learning and faith.</p>
+        <p class="prose">Notes on building software, learning and faith. <a href="feed.xml">RSS</a></p>
         ${subBox}
         ${list}
       </div>
@@ -143,3 +143,15 @@ ${posts.map(p => `<item><title>${esc(p.title)}</title><link>${SITE}/blog/${p.slu
 </channel></rss>
 `);
 console.log('Built ' + posts.length + ' post' + (posts.length === 1 ? '' : 's') + ' into blog/');
+
+// Keep the "latest post" line on the homepage current
+if (posts.length) {
+  const idx = path.join(__dirname, 'index.html');
+  if (fs.existsSync(idx)) {
+    const p = posts[0];
+    const line = '<!--latest--><p class="latest">Latest: <a href="blog/' + p.slug + '.html">' + esc(p.title) + '</a> <span class="muted">· ' + fmt(p.date) + '</span></p><!--/latest-->';
+    const h = fs.readFileSync(idx, 'utf8');
+    const out = h.replace(/<!--latest-->[\s\S]*?<!--\/latest-->/, () => line);
+    if (out !== h) fs.writeFileSync(idx, out);
+  }
+}
