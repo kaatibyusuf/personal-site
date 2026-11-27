@@ -232,3 +232,12 @@ a.row:hover .row-title { text-decoration-color: var(--accent); }
 /* 404 */
 .nf { max-width: 52ch; }
 .nf .page-h { margin-bottom: 20px; }
+
+/* now */
+.now { list-style: none; margin: 0; padding: 0; max-width: 66ch; }
+.now li { display: grid; grid-template-columns: 110px 1fr; gap: 6px 20px; padding: 12px 0; border-top: 1px solid var(--line); }
+.now li:last-child { border-bottom: 1px solid var(--line); }
+.now-k { color: var(--accent); }
+.now a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.now-d { margin: 12px 0 0; font-size: 13.5px; color: var(--muted); }
+@media (max-width: 560px) { .now li { grid-template-columns: 1fr; } }
