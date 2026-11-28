@@ -109,7 +109,7 @@ fs.writeFileSync(path.join(OUT, 'index.html'), head('Blog · Abdulsamad Yusuf', 
     <section class="block blog-top">
       <div class="wrap">
         <h1 class="page-h">~/blog</h1>
-        <p class="prose">Notes on building software, learning and faith. <a href="feed.xml">RSS</a></p>
+        <p class="prose">Notes on building software, learning and faith.</p>
         ${subBox}
         ${list}
       </div>
